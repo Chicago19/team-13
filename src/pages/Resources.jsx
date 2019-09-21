@@ -1,6 +1,7 @@
 import React from 'react';
 import jsonData from '../uploads/resources.json'
 import Form from '../components/Form.jsx'
+import BackButton from '../components/BackButton.jsx'
 
 class Resources extends React.Component {
 	constructor(props){
@@ -28,7 +29,7 @@ class Resources extends React.Component {
 			console.log(this.emailAddress);
 			console.log(checkedResources);
 
-			fetch('API_ENDPOINT', {
+			fetch('http://localhost:4000/api/email/sendEmail', {
 				method: 'POST',
 				headers: {
 					'Accept': 'application/json',
@@ -56,6 +57,7 @@ class Resources extends React.Component {
 
 			<input type="text" onChange={this.textChange.bind(this)}/>
 			<input type="submit" value="Submit" onClick={this.sendEmail}/>
+			<BackButton></BackButton>
 		</div>
 		);
 	}
