@@ -10,15 +10,16 @@ import { thisExpression } from '@babel/types';
 
 
 export default class childPage extends React.Component{
-    
+
     render(){
         return(
             <Container>
                 <Row>
                     {/* <ButtonToolbar className> */}
-                        <Button variant = "primary" >Yeet</Button>
-                        <Button variant="secondary" >Yote</Button>
-                        <Button variant="success">Yought</Button>
+                        <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
+                        <a href="/games1"><Button variant="secondary" >Daily Crossword</Button></a>
+                        <a href="/games2"><Button variant="success">Huge Spider Solitaire</Button></a>
+                        <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
                     {/* </ButtonToolbar> */}
                 </Row>
                 <embed width="800" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
