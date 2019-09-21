@@ -3,6 +3,7 @@ import { Row, Col, Container, Button, ButtonToolbar } from 'react-bootstrap';
 import {mahjong} from './images/mahjong.jpg';
 import { thisExpression } from '@babel/types';
 import BackButton from '../components/BackButton.jsx';
+import {renderNavBar} from '../global_components/header.jsx';
 
 //https://cdn.htmlgames.com/DailyCrossword/
 //https://cdn.htmlgames.com/HugeSpiderSolitaire/
@@ -15,6 +16,7 @@ export default class childPage extends React.Component{
     render(){
         return(
             <Container>
+            {renderNavBar("Games")}
                 <Row>
                     {/* <ButtonToolbar className> */}
                         <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
@@ -23,9 +25,9 @@ export default class childPage extends React.Component{
                         <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
                     {/* </ButtonToolbar> */}
                 </Row>
-                <embed width="500" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
-  
-                <BackButton urlRoute="/frontPage"></BackButton>
+                <embed width="800" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
+
+                <BackButton urlRoute="/"></BackButton>
             </Container>
         )
     }
