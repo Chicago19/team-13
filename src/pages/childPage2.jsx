@@ -18,15 +18,17 @@ export default class childPage2 extends React.Component{
                 </div>
                 <Container>
                 
-                <Row>
-                    {/* <ButtonToolbar className> */}
-                        <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
-                        <a href="/games1"><Button variant="secondary" >Daily Crossword</Button></a>
-                        <a href="/games2"><Button variant="success">Huge Spider Solitaire</Button></a>
-                        <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
-                    {/* </ButtonToolbar> */}
-                </Row>
-                    <embed width="800" height="600" src="https://cdn.htmlgames.com/HugeSpiderSolitaire/"></embed>
+                    <Row>
+                        {/* <ButtonToolbar className> */}
+                            <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
+                            <a href="/games1"><Button variant="secondary" >Daily Crossword</Button></a>
+                            <a href="/games2"><Button variant="success">Huge Spider Solitaire</Button></a>
+                            <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
+                        {/* </ButtonToolbar> */}
+                    </Row>
+                    <div className="game-spacing">
+                        <embed width="800" height="600" src="https://cdn.htmlgames.com/HugeSpiderSolitaire/"></embed>
+                    </div>
                     <BackButton urlRoute="/"></BackButton>
                 </Container>
             </>

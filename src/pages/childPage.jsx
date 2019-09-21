@@ -29,8 +29,9 @@ export default class childPage extends React.Component{
                             <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
                         {/* </ButtonToolbar> */}
                     </Row>
-                    <embed width="800" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
-
+                    <div className="game-spacing">
+                        <embed width="800" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
+                    </div>
                     <BackButton urlRoute="/"></BackButton>
                 </Container>
             </>
