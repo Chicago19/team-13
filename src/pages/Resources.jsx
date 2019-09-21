@@ -56,7 +56,7 @@ class Resources extends React.Component {
 		<div >
 			<h1>Resources</h1>
 			<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
-			<input type="text" onChange={this.textChange.bind(this)}/>
+			Email: <input type="text" onChange={this.textChange.bind(this)}/>
 			<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
 			<BackButton urlRoute="/claireslittyreactpage"></BackButton>
 		</div>
