@@ -8,7 +8,7 @@ import './css/loginPage.css';
 
 
 
-export default class NameForm extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
