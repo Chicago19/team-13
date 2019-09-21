@@ -4,11 +4,9 @@ class FrontPage extends React.Component{
   render(){
     return(
       <div>
-      <button class="btn btn-primary" type="submit">Button</button>
-      <button class="btn btn-primary" type="submit">Button</button>
+      <button class="btn btn-primary" type="submit"><a href="/games">Child</a></button>
+      <button class="btn btn-primary" type="submit"><a href="/claireslittyreactpage">Adult</a></button>
       </div>
-
-
       );
   }
 }
