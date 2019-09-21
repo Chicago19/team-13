@@ -20,7 +20,7 @@ class App extends Component{
         <Router>
           <Switch>
             <Route exact path="/" component={FrontPage}/>
-            <Route exact path="/claireslittyreactpage" component={MainAdultPage}/>
+            <Route exact path="/adult-main" component={MainAdultPage}/>
             <Route exact path="/resources" component={Resources}/>
             <Route exact path="/games" component={childPage}/>
             <Route exact path="/games1" component={childPage1}/>

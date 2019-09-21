@@ -69,7 +69,7 @@ class Resources extends React.Component {
 					<div className="center">
 						<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
 						&nbsp;
-						<BackButton urlRoute="/claireslittyreactpage"></BackButton>
+						<BackButton urlRoute="/adult-main"></BackButton>
 					</div>
 				</Container>
 			</>

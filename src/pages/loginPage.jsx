@@ -26,7 +26,7 @@ export default class Login extends React.Component {
     if (this.state.value != 'password') {
       this.props.history.push('/');
     } else {
-      this.props.history.push('/claireslittyreactpage');
+      this.props.history.push('/adult-main');
     }
   }
 
@@ -37,14 +37,14 @@ export default class Login extends React.Component {
         transform: 'translate(-50%, -50%)'}}>
           {/* #b256d8 */}
           <div style={{display: 'flex', justifyContent: 'center', paddingBottom: '6px'}}><Image src={logo} style={{width:'50%'}} roundedCircle/></div>
-          
+
           <div style={{display: 'flex', justifyContent: 'center', color: '#b256d8', fontSize: '20pt', paddingBottom: '5px'}}>
               Enter Pass Code
             </div>
           <form style={{display: 'flex', justifyContent: 'center'}} onSubmit={this.handleSubmit}>
-          
+
               <input style={{border: 'groove'}} type="password" value={this.state.value} onChange={this.handleChange} />
-            
+
 
             <Button variant="primary" input type="submit" value="Submit" size="sm">Submit</Button>
 
