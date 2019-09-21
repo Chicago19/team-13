@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col, Container, Button, ButtonToolbar } from 'react-bootstrap';
 import BackButton from '../components/BackButton.jsx';
+import {renderNavBar} from '../global_components/header.jsx';
+
 const renderButton = (props) =>{
     return(
         <Button>props</Button>
@@ -11,6 +13,7 @@ export default class childPage1 extends React.Component{
     render(){
         return(
             <Container>
+            {renderNavBar("Games")}
             <Row>
                 {/* <ButtonToolbar className> */}
                     <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
@@ -19,8 +22,8 @@ export default class childPage1 extends React.Component{
                     <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
                 {/* </ButtonToolbar> */}
             </Row>
-                <embed width="500" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
-                <BackButton urlRoute="/frontpage"></BackButton>
+                <embed width="800" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
+                <BackButton urlRoute="/"></BackButton>
             </Container>
         )
     }
