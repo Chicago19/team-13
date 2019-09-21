@@ -14,11 +14,7 @@ class App extends Component{
         <Router>
           <Switch>
             <Route exact path="/" component={FrontPage}/>
-<<<<<<< HEAD
-            <Route exact path="/claireslittyreactpage" component={mainAdultPage}/>
-=======
             <Route exact path="/claireslittyreactpage" component={MainAdultPage}/>
->>>>>>> mainadultpage
             <Route exact path="/resources" component={Resources}/>
             <Route exact path="/games" component={childPage}/>
             <Redirect to="/404"/>

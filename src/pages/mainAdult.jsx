@@ -1,6 +1,7 @@
 import React from 'react';
 import ccaclogo from './images/ccaclogo.jpg';
 import {Row, Container, Button} from 'react-bootstrap';
+
 class CCACinfo extends React.Component{
     render(){
         return(
@@ -12,6 +13,7 @@ class CCACinfo extends React.Component{
         );
     }
 }
+
 
 class Buttons extends React.Component{
     render(){
