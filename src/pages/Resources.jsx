@@ -9,17 +9,21 @@ class Resources extends React.Component {
 		jsonData.forEach(element => {
 		 	this.state[element.title] = false;
 		 });
+		this.emailAddress = "";
 	}
 
 	checkBoxChange = (title, event) => {
-		console.log(event);
-		console.log(title);
 		this.setState({ [title]: !this.state[title]})
 	}
 
 	sendEmail = () => {
-		
+
 	}
+
+	textChange(event) {
+		this.emailAddress = event.target.value;
+	}
+
 	
 	render(){
 		{console.log(this.state)}
@@ -28,7 +32,7 @@ class Resources extends React.Component {
 			<h1>Resources</h1>
 			<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
 
-			<input type="text" />
+			<input type="text" onChange={this.textChange.bind(this)}/>
 			<input type="submit" value="Submit" onClick={this.sendEmail}/>
 		</div>
 		);
