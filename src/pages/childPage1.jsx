@@ -19,7 +19,7 @@ export default class childPage1 extends React.Component{
                     <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
                 {/* </ButtonToolbar> */}
             </Row>
-                <embed width="800" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
+                <embed width="500" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
             </Container>
         )
     }
