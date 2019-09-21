@@ -4,7 +4,7 @@ import BackButton from '../components/BackButton.jsx';
 import {Container, Row, Col, ButtonToolbar, Button, Image} from 'react-bootstrap';
 import Pic from '../uploads/holding-hands.jpg';
 import {renderNavBar} from '../global_components/header.jsx';
-
+import './css/mainAdult.css';
 
 class CCACinfo extends React.Component{
     render(){
@@ -23,8 +23,18 @@ class CCACinfo extends React.Component{
                 <Row>
                     <Col>
                         <div className="background-color">
-                            <p className="px-2"> Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration. 
-                            Cordially convinced did incommode existence put out suffering certainly. Besides another and saw ferrars limited ten say unknown. On at tolerably depending do perceived. Luckily eat joy see own shyness minuter. So before remark at depart. Did son unreserved themselves indulgence its. Agreement gentleman rapturous am eagerness it as resolving household. Direct wicket little of talked lasted formed or it. Sweetness consulted may prevailed for bed out sincerity. 
+                            <p className="px-2"> Our mission
+Uniting public, private and community partners to ensure the safety, health and well-being of abused children. <br></br>
+
+Our shared vision
+To eliminate the suffering of abused children in Chicago.
+<br></br>
+Our core values
+Freedom from abuse and exploitation is a basic human right.
+The center is a safe place for everyone who enters its doors.
+The collaborative process is the best approach to prevent and respond to child abuse.
+Our children and families deserve to receive the highest standard of care available.
+Best-practice interventions can restore lives.
                             </p>
                         </div>
                     </Col>
