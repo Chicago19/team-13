@@ -1,7 +1,13 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 import Button from 'react-bootstrap/Button';
-import './css/login.css';
+import logo from './images/ccaclogo.jpg';
+import { Image } from 'react-bootstrap';
+import './css/loginPage.css';
+
+
+
+
 export default class NameForm extends React.Component {
   constructor(props) {
     super(props);
@@ -26,15 +32,22 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Password:
-          <input type="password" value={this.state.value} onChange={this.handleChange} />
-        </label>
+      <div style={{
+        position: 'absolute', left: '50%', top: '50%',
+        transform: 'translate(-50%, -50%)'}}>
+          {/* #b256d8 */}
+          <Image src={logo} style={{width:'30%'}} roundedCircle/>
 
-        <Button variant="primary" input type="submit" value="Submit" size="sm">Submit</Button>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Password:
+              <input type="password" value={this.state.value} onChange={this.handleChange} />
+            </label>
 
-      </form>
+            <Button variant="primary" input type="submit" value="Submit" size="sm">Submit</Button>
+
+          </form>
+      </div>
     );
   }
 }
