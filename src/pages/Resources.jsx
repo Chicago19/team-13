@@ -3,6 +3,7 @@ import jsonData from '../uploads/resources.json'
 import Form from '../components/Form.jsx'
 import BackButton from '../components/BackButton.jsx'
 
+
 class Resources extends React.Component {
 	constructor(props){
 		super(props);
@@ -54,7 +55,6 @@ class Resources extends React.Component {
 		<div >
 			<h1>Resources</h1>
 			<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
-
 			<input type="text" onChange={this.textChange.bind(this)}/>
 			<input type="submit" value="Submit" onClick={this.sendEmail}/>
 			<BackButton></BackButton>

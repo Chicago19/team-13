@@ -1,4 +1,25 @@
 import React from 'react';
+import {Accordion, Card, Button} from 'react-bootstrap';
+
+
+const renderCards = (title, props, link, checkBoxChange) =>{
+	return(
+		<Card>
+			<Card.Header>
+				<a>{title}</a>
+				&nbsp;
+				<input type="checkbox" onChange={(e) => checkBoxChange(title, e)} />	
+			</Card.Header>
+			<Card.Body>
+				<Card.Text>
+				{props}
+				</Card.Text>
+				<Button variant="primary" href={link} target="_blank"> Read More</Button>
+			</Card.Body>
+		</Card>
+	)
+}
+
 
 const Form = ({data, checkBoxChange}) => {
 //{/*<Link key={i} articleInfo={article} />*/}
@@ -10,9 +31,7 @@ const Form = ({data, checkBoxChange}) => {
 	const form = data.map((resource, i) => {
 		return (
 			<label key={i}>
-				<a href={resource.link} target="_blank">{resource.title}</a>
-				<input type="checkbox" name="name" onChange={(e) => checkBoxChange(resource.title, e)} />
-				<br/>{resource.description}<br/><br/>
+				<br/>{renderCards(resource.title ,resource.description, resource.link, checkBoxChange)}<br/><br/>
 			</label>
 		);
 	});
