@@ -1,10 +1,10 @@
 import React from 'react';
-import {Accordion, Card, Button} from 'react-bootstrap';
-
+import {Card, Button} from 'react-bootstrap';
+import '../pages/css/resources.css';
 
 const renderCards = (title, props, link, checkBoxChange) =>{
 	return(
-		<Card>
+		<Card className="width">
 			<Card.Header>
 				<a>{title}</a>
 				&nbsp;
