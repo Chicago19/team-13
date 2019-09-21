@@ -60,17 +60,17 @@ class Resources extends React.Component {
 					{renderNavBar("Resources")}
 				</div>
 				<Container>
-					<div className="center">
+					<div>
 						<CardDeck className="padding">
 							<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
 						</CardDeck>
 					</div>
 					Email: <input type="text" onChange={this.textChange.bind(this)}/>
-					<div className="center">
-						<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
-						&nbsp;
-						<BackButton urlRoute="/claireslittyreactpage"></BackButton>
-					</div>
+					
+					<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
+					&nbsp;
+					<BackButton urlRoute="/claireslittyreactpage"></BackButton>
+				
 				</Container>
 			</>
 		);
