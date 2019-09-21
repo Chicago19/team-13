@@ -28,17 +28,17 @@ class Resources extends React.Component {
 			console.log(this.emailAddress);
 			console.log(checkedResources);
 
-			/*fetch('API_ENDPOINT', {
+			fetch('API_ENDPOINT', {
 				method: 'POST',
 				headers: {
 					'Accept': 'application/json',
     				'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
-					emailAddress: this.emailAddress,
+					email: this.emailAddress,
 					resources: checkedResources,
 				})
-			})*/
+			})
 		}
 
 	}
