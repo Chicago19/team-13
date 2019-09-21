@@ -1,26 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import MainAdultPage from './pages/mainAdult.jsx';
+import FrontPage from './pages/frontpage.jsx';
+import Resources from './pages/Resources.jsx';
+import childPage from './pages/childPage.jsx';
+class App extends Component{
+  render(){
+    return (
+        <Router>
+          <Switch>
+            <Route exact path="/" component={FrontPage}/>
+            <Route exact path="/claireslittyreactpage" component={MainAdultPage}/>
+            <Route exact path="/resources" component={Resources}/>
+            <Route exact path="/games" component={childPage}/>
+            <Redirect to="/404"/>
+          </Switch>
+        </Router>
+    );
+  }
 }
 
 export default App;
