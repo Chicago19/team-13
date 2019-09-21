@@ -5,7 +5,7 @@ class FrontPage extends React.Component{
     return(
       <div>
       <button class="btn btn-primary" type="submit"><a href="/games">Child</a></button>
-      <button class="btn btn-primary" type="submit"><a href="/claireslittyreactpage">Adult</a></button>
+      <button class="btn btn-primary" type="submit"><a href="/login">Adult</a></button>
       </div>
       );
   }
