@@ -21,6 +21,14 @@
     left:50%;
 }
 
+.upper-left{
+    position: absolute;
+    top:2%;
+    left:5%;
+    width:20%;    
+}
+
+
 .color-green{
     color: #77DD77;
 }
