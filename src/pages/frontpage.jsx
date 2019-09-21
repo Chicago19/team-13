@@ -14,13 +14,13 @@ class FrontPage extends React.Component{
           <Row>
             <Col className="no-padding max-width">
               <a href="/claireslittyreactpage">
-                <Image src={Parent} className="max-width"/>
+                <Image src={Parent} className="max-width filter"/>
                 <h1 className="center color-green">Parent</h1>
               </a>
             </Col>
             <Col className="no-padding max-width">
               <a href="/games">
-                <Image src={Children} className="max-width"/>
+                <Image src={Children} className="max-width filter"/>
                 <h1 className="center color-purple">Children</h1>
               </a>
             </Col>
