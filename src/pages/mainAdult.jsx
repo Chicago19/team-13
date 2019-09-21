@@ -20,8 +20,12 @@ class Buttons extends React.Component{
         return(
             <Container>
                 <Row>
-                    <Button>Resources</Button>
-                    <Button>Surveys</Button>
+                    <Button type="submit">
+                        <a href="/resources">Resources</a>
+                    </Button>
+                    <Button type ="submit">
+                        <a href ="/surveys">Surveys</a>
+                    </Button>
                 </Row>
             </Container>
             
