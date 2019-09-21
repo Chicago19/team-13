@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router';
+import Button from 'react-bootstrap/Button';
 
 export default class NameForm extends React.Component {
   constructor(props) {
@@ -30,7 +31,8 @@ export default class NameForm extends React.Component {
           Password:
           <input type="password" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+
+        <Button variant="primary" input type="submit" value="Submit" size="sm">Submit</Button>
 
       </form>
     );
