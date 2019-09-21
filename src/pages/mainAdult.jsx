@@ -3,6 +3,9 @@ import ccaclogo from './images/ccaclogo.jpg';
 import BackButton from '../components/BackButton.jsx';
 import {Container, Row, Col, ButtonToolbar, Button, Image} from 'react-bootstrap';
 import Pic from '../uploads/holding-hands.jpg';
+import {renderNavBar} from '../global_components/header.jsx';
+
+
 class CCACinfo extends React.Component{
     render(){
         return(
@@ -10,7 +13,7 @@ class CCACinfo extends React.Component{
                 <div>
                     <Row>
                         <Col>
-                            <h1 className = "center-align px-auto">Chicago Children's Advocacy Center</h1>
+                            {renderNavBar("About Us")}
                         </Col>       
                     </Row>
                 </div>
