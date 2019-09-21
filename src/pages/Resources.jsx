@@ -17,6 +17,29 @@ class Resources extends React.Component {
 	}
 
 	sendEmail = () => {
+		let checkedResources = [];
+		jsonData.forEach(element => {
+			if (this.state[element.title] === true){
+				checkedResources.push(element);
+			}
+		});
+
+		if (this.emailAddress !== "" && checkedResources.length > 0){
+			console.log(this.emailAddress);
+			console.log(checkedResources);
+
+			/*fetch('API_ENDPOINT', {
+				method: 'POST',
+				headers: {
+					'Accept': 'application/json',
+    				'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					emailAddress: this.emailAddress,
+					resources: checkedResources,
+				})
+			})*/
+		}
 
 	}
 
@@ -26,7 +49,6 @@ class Resources extends React.Component {
 
 	
 	render(){
-		{console.log(this.state)}
 		return (
 		<div >
 			<h1>Resources</h1>
