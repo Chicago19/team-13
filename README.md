@@ -29,3 +29,24 @@ If running for the first time, run the following to get dependencies:
 ### `npm install`
 
 
+### Project Overview
+![FrontPage](https://raw.githubusercontent.com/Chicago19/team-13/master/project_images/front_page.png?token=AHY4JUK2VDVM7WA3DVZPCMK5R6FLE)
+
+A page split between two main options, one leading to children port, and one to the parent port
+
+![Games](https://raw.githubusercontent.com/Chicago19/team-13/master/project_images/games.png?token=AHY4JUJIPGQBFYY477IIMMK5R6FRQ)
+
+A page containing multiple embeded games for children to select and play.
+
+![LockScreen](https://raw.githubusercontent.com/Chicago19/team-13/master/project_images/lock_screen.png?token=AHY4JULUAADHPO43BXCNVVC5R6FUQ)
+
+An adult authentication page, to prevent children from accessing sensitive information.
+
+![Resources](https://raw.githubusercontent.com/Chicago19/team-13/master/project_images/resources.png?token=AHY4JUKWRE55PTIDH3EXEG25R6FZQ)
+
+A page that includes all the resources and references for adults, with a fuctionality that allows to them to select their information of preference and email themselves a copy. 
+
+![Surveys](https://raw.githubusercontent.com/Chicago19/team-13/master/project_images/surveys.png?token=AHY4JUJ65LJKMPZK5JC562C5R6F74)
+
+A page containing an embeded Qualtrics survey. Can be any other survey.
+
