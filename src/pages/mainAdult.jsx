@@ -1,5 +1,6 @@
 import React from 'react';
 import ccaclogo from './images/ccaclogo.jpg';
+import {Container, Row, ButtonToolbar, Button} from 'react-bootstrap'
 class CCACinfo extends React.Component{
     render(){
         return(
@@ -12,7 +13,7 @@ class CCACinfo extends React.Component{
     }
 }
 
-class resourcesButton extends React.Component{
+class ResourcesButton extends React.Component{
     render(){
         return(
             <Container>
@@ -25,7 +26,7 @@ class resourcesButton extends React.Component{
                     </Button>
                 </Row>
             </Container>
-            
+
         );
     }
 }
@@ -38,7 +39,7 @@ const MainAdultPage = () => {
                 <h1>Adult Homepage</h1>
             </div>
             <CCACinfo/>
-            <resourcesButton/>
+            <ResourcesButton/>
         </div>
 	);
 }
