@@ -1,0 +1,55 @@
+.max-width{
+    width:100%;
+}
+
+.max-height{
+    height:100%;
+}
+.no-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.no-margin{
+    margin-right:0px;
+    margin-left:0px;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+.upper-left{
+    position: absolute;
+    top:2%;
+    left:5%;
+    width:20%;    
+}
+
+
+.color-green{
+    color: #77DD77;
+}
+
+.color-purple{
+    color: #b19cd9;
+}
+
+.filter{
+    filter: brightness(50%);
+}
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
