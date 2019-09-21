@@ -23,18 +23,18 @@ class CCACinfo extends React.Component{
                 <Row>
                     <Col>
                         <div className="background-color">
-                            <p className="px-2"> Our mission
-Uniting public, private and community partners to ensure the safety, health and well-being of abused children. <br></br>
+                            <p className="px-2"><b> Our mission </b> 
+                            Uniting public, private and community partners to ensure the safety, health and well-being of abused children. <br></br>
 
-Our shared vision
-To eliminate the suffering of abused children in Chicago.
-<br></br>
-Our core values
-Freedom from abuse and exploitation is a basic human right.
-The center is a safe place for everyone who enters its doors.
-The collaborative process is the best approach to prevent and respond to child abuse.
-Our children and families deserve to receive the highest standard of care available.
-Best-practice interventions can restore lives.
+                        <b>Our shared vision </b>
+                        To eliminate the suffering of abused children in Chicago.
+                        <br></br>
+                        <b>Our core values </b>
+                        Freedom from abuse and exploitation is a basic human right.
+                        The center is a safe place for everyone who enters its doors.
+                        The collaborative process is the best approach to prevent and respond to child abuse.
+                        Our children and families deserve to receive the highest standard of care available.
+                        Best-practice interventions can restore lives.
                             </p>
                         </div>
                     </Col>
