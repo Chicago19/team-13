@@ -12,19 +12,23 @@ const renderButton = (props) =>{
 export default class childPage1 extends React.Component{
     render(){
         return(
-            <Container>
-            {renderNavBar("Games")}
-            <Row>
-                {/* <ButtonToolbar className> */}
-                    <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
-                    <a href="/games1"><Button variant="secondary" >Daily Crossword</Button></a>
-                    <a href="/games2"><Button variant="success">Huge Spider Solitaire</Button></a>
-                    <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
-                {/* </ButtonToolbar> */}
-            </Row>
-                <embed width="800" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
-                <BackButton urlRoute="/"></BackButton>
-            </Container>
+            <>
+                <div>
+                    {renderNavBar("Games")}
+                </div>
+                <Container>
+                <Row>
+                    {/* <ButtonToolbar className> */}
+                        <a href="/games"><Button variant="primary" >Fruit Cubes</Button></a>
+                        <a href="/games1"><Button variant="secondary" >Daily Crossword</Button></a>
+                        <a href="/games2"><Button variant="success">Huge Spider Solitaire</Button></a>
+                        <a href="/games3"><Button variant="warning">Animal Mahjong</Button></a>
+                    {/* </ButtonToolbar> */}
+                </Row>
+                    <embed width="800" height="600" src="https://cdn.htmlgames.com/DailyCrossword/"></embed>
+                    <BackButton urlRoute="/"></BackButton>
+                </Container>
+            </>
         )
     }
 }
