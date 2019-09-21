@@ -9,11 +9,12 @@ import Children from '../uploads/children.jpg';
 class FrontPage extends React.Component{
   render(){
     return(
+
       
         <div className="max-width">
           <Row>
             <Col className="no-padding max-width">
-              <a href="/claireslittyreactpage">
+              <a href="/login">
                 <Image src={Parent} className="max-width filter"/>
                 <h1 className="center color-green">Parent</h1>
               </a>
@@ -36,13 +37,8 @@ const Front = () => {
     <div>
       <FrontPage/>
     </div>
-
-
-
     );
-
 }
-
 
 
 export default Front;
