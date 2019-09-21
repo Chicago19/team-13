@@ -12,7 +12,7 @@ class FrontPage extends React.Component{
     return(
 
       
-        <div className="max-width">
+        <div>
           <Row>
             <Col className="no-padding max-width">
               <a href="/login">
