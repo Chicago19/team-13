@@ -36,13 +36,15 @@ export default class Login extends React.Component {
         position: 'absolute', left: '50%', top: '50%',
         transform: 'translate(-50%, -50%)'}}>
           {/* #b256d8 */}
-          <Image src={logo} style={{width:'30%'}} roundedCircle/>
-
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              Password:
-              <input type="password" value={this.state.value} onChange={this.handleChange} />
-            </label>
+          <div style={{display: 'flex', justifyContent: 'center', paddingBottom: '6px'}}><Image src={logo} style={{width:'50%'}} roundedCircle/></div>
+          
+          <div style={{display: 'flex', justifyContent: 'center', color: '#b256d8', fontSize: '20pt', paddingBottom: '5px'}}>
+              Enter Pass Code
+            </div>
+          <form style={{display: 'flex', justifyContent: 'center'}} onSubmit={this.handleSubmit}>
+          
+              <input style={{border: 'groove'}} type="password" value={this.state.value} onChange={this.handleChange} />
+            
 
             <Button variant="primary" input type="submit" value="Submit" size="sm">Submit</Button>
 

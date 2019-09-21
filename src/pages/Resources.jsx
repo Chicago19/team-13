@@ -4,7 +4,8 @@ import Form from '../components/Form.jsx'
 import BackButton from '../components/BackButton.jsx'
 import './css/resources.css';
 import Button from 'react-bootstrap/Button';
-
+import {renderNavBar} from '../global_components/header.jsx';
+import {CardDeck, Container} from 'react-bootstrap';
 
 class Resources extends React.Component {
 	constructor(props){
@@ -54,13 +55,24 @@ class Resources extends React.Component {
 
 	render(){
 		return (
-		<div >
-			<h1>Resources</h1>
-			<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
-			Email: <input type="text" onChange={this.textChange.bind(this)}/>
-			<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
-			<BackButton urlRoute="/claireslittyreactpage"></BackButton>
-		</div>
+			<>
+				<div>
+					{renderNavBar("Resources")}
+				</div>
+				<Container>
+					<div className="center">
+						<CardDeck className="padding">
+							<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
+						</CardDeck>
+					</div>
+					Email: <input type="text" onChange={this.textChange.bind(this)}/>
+					<div className="center">
+						<Button variant="primary" input type="submit" value="Submit" onClick={this.sendEmail} size="sm">Submit</Button>
+						&nbsp;
+						<BackButton urlRoute="/claireslittyreactpage"></BackButton>
+					</div>
+				</Container>
+			</>
 		);
 	}
 }

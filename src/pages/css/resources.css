@@ -3,3 +3,16 @@ h1{
     justify-content: center;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.width{
+    width: 350px;
+}
+
+.padding{
+    padding-left: 195px;
+}
+
