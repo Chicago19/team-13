@@ -18,12 +18,12 @@ class ResourcesButton extends React.Component{
         return(
             <Container>
                 <Row>
-                    <Button type="submit">
-                        <a href="/resources">Resources</a>
-                    </Button>
-                    <Button type ="submit">
-                        <a href ="/surveys">Surveys</a>
-                    </Button>
+                    <a href="/resources"><Button type="submit">
+                        Resources
+                    </Button></a>
+                      <a href ="/surveys"><Button type ="submit">
+                      Surveys
+                    </Button></a>
                 </Row>
             </Container>
 
