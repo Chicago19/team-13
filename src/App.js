@@ -12,7 +12,7 @@ import childPage1 from './pages/childPage1.jsx';
 import childPage2 from './pages/childPage2.jsx';
 import childPage3 from './pages/childPage3.jsx';
 import Surveys from './pages/surveys.jsx';
-import NameForm from './pages/loginPage.jsx';
+import Login from './pages/loginPage.jsx';
 
 class App extends Component{
   render(){
@@ -27,7 +27,7 @@ class App extends Component{
             <Route exact path="/games2" component={childPage2}/>
             <Route exact path="/games3" component={childPage3}/>
             <Route exact path="/surveys" component ={Surveys}/>
-            <Route exact path="/login" component={NameForm}/>
+            <Route exact path="/login" component={Login}/>
             <Redirect to="/404"/>
           </Switch>
         </Router>
