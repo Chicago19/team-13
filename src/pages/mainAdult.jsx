@@ -1,5 +1,6 @@
 import React from 'react';
 import ccaclogo from './images/ccaclogo.jpg';
+import BackButton from '../components/BackButton.jsx'
 import {Container, Row, ButtonToolbar, Button} from 'react-bootstrap'
 class CCACinfo extends React.Component{
     render(){
@@ -40,6 +41,7 @@ const MainAdultPage = () => {
             </div>
             <CCACinfo/>
             <ResourcesButton/>
+            <BackButton urlRoute="/"/>
         </div>
 	);
 }
