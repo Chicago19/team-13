@@ -2,7 +2,7 @@ import React from 'react';
 import jsonData from '../uploads/resources.json'
 import Form from '../components/Form.jsx'
 import BackButton from '../components/BackButton.jsx'
-
+import './css/resources.css';
 
 class Resources extends React.Component {
 	constructor(props){
@@ -55,8 +55,9 @@ class Resources extends React.Component {
 		<div >
 			<h1>Resources</h1>
 			<Form data={jsonData} checkBoxChange={this.checkBoxChange}></Form>
+			<h4>Enter your email to send the selected resources:</h4>
 			<input type="text" onChange={this.textChange.bind(this)}/>
-			<input type="submit" value="Submit" onClick={this.sendEmail}/>
+			<input type="submit" value="Send" onClick={this.sendEmail}/>
 			<BackButton></BackButton>
 		</div>
 		);

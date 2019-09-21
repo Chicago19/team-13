@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container, Button, ButtonToolbar } from 'react-bootstrap';
 import {mahjong} from './images/mahjong.jpg';
 import { thisExpression } from '@babel/types';
+import BackButton from '../components/BackButton.jsx';
 
 //https://cdn.htmlgames.com/DailyCrossword/
 //https://cdn.htmlgames.com/HugeSpiderSolitaire/
@@ -23,6 +24,8 @@ export default class childPage extends React.Component{
                     {/* </ButtonToolbar> */}
                 </Row>
                 <embed width="500" height="600" src="https://cdn.htmlgames.com/FruitCubes/" ></embed>
+  
+                <BackButton urlRoute="/frontPage"></BackButton>
             </Container>
         )
     }

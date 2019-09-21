@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container, Button, ButtonToolbar } from 'react-bootstrap';
-
+import BackButton from '../components/BackButton.jsx';
 const renderButton = (props) =>{
     return(
         <Button>props</Button>
@@ -20,6 +20,7 @@ export default class childPage2 extends React.Component{
                 {/* </ButtonToolbar> */}
             </Row>
                 <embed width="500" height="600" src="https://cdn.htmlgames.com/HugeSpiderSolitaire/"></embed>
+                <BackButton urlRoute="/frontPage"></BackButton>
             </Container>
         )
     }

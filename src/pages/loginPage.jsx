@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 import Button from 'react-bootstrap/Button';
-
+import './css/login.css';
 export default class NameForm extends React.Component {
   constructor(props) {
     super(props);
