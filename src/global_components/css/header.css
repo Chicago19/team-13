@@ -1,0 +1,16 @@
+.change-width{
+    width:30%;
+}
+
+.center{
+    text-align: center;
+}
+
+.no-padding{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.colored-banner{
+    background-color: #b19cd9;
+}

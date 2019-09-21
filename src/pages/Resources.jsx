@@ -2,6 +2,7 @@ import React from 'react';
 import jsonData from '../uploads/resources.json'
 import Form from '../components/Form.jsx'
 import BackButton from '../components/BackButton.jsx'
+import './css/resources.css';
 import Button from 'react-bootstrap/Button';
 
 
