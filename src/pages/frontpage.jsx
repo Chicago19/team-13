@@ -10,11 +10,12 @@ import logo from './images/ccaclogo.jpg';
 class FrontPage extends React.Component{
   render(){
     return(
+
       
         <div className="max-width">
           <Row>
             <Col className="no-padding max-width">
-              <a href="/claireslittyreactpage">
+              <a href="/login">
                 <Image src={Parent} className="max-width filter"/>
                 <h1 className="center color-green">Parent</h1>
                 <Image src={logo} className="upper-left" roundedCircle/>
@@ -38,13 +39,8 @@ const Front = () => {
     <div>
       <FrontPage/>
     </div>
-
-
-
     );
-
 }
-
 
 
 export default Front;
