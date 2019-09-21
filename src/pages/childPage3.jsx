@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Container, Button, ButtonToolbar } from 'react-bootstrap';
 import BackButton from '../components/BackButton.jsx';
 import {renderNavBar} from '../global_components/header.jsx';
-
+import './css/child.css'
 const renderButton = (props) =>{
     return(
         <Button>props</Button>

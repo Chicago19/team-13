@@ -4,7 +4,7 @@ import {mahjong} from './images/mahjong.jpg';
 import { thisExpression } from '@babel/types';
 import BackButton from '../components/BackButton.jsx';
 import {renderNavBar} from '../global_components/header.jsx';
-
+import './css/child.css';
 //https://cdn.htmlgames.com/DailyCrossword/
 //https://cdn.htmlgames.com/HugeSpiderSolitaire/
 //https://cdn.htmlgames.com/AnimalMahjong/
