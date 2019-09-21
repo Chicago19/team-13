@@ -11,21 +11,13 @@ class FrontPage extends React.Component{
   }
 }
 
-
-
-
 const Front = () => {
   return (
     <div>
       <FrontPage/>
     </div>
-
-
-
     );
-
 }
-
 
 
 export default Front;

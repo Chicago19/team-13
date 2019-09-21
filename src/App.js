@@ -8,6 +8,8 @@ import MainAdultPage from './pages/mainAdult.jsx';
 import FrontPage from './pages/frontpage.jsx';
 import Resources from './pages/Resources.jsx';
 import childPage from './pages/childPage.jsx';
+import NameForm from './pages/loginPage.jsx';
+
 class App extends Component{
   render(){
     return (
@@ -17,6 +19,7 @@ class App extends Component{
             <Route exact path="/claireslittyreactpage" component={MainAdultPage}/>
             <Route exact path="/resources" component={Resources}/>
             <Route exact path="/games" component={childPage}/>
+            <Route exact path="/login" component={NameForm}/>
             <Redirect to="/404"/>
           </Switch>
         </Router>
