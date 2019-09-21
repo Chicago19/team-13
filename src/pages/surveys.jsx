@@ -1,4 +1,7 @@
 import React from 'react';
+import BackButton from '../components/BackButton.jsx'
+
+import './css/surveys.css';
 
 class SurveyFrame extends React.Component{
     render(){
@@ -16,9 +19,10 @@ const Surveys = () => {
 	return (
         <div className = "surveys">
             <div >
-                <h1>Surveys</h1>
+                <h1 className="element">Surveys</h1>
             </div>
-            <SurveyFrame/>
+            <SurveyFrame className="element" />
+            <BackButton className="element" urlRoute="/claireslittyreactpage"/>
         </div>
 	);
 }
