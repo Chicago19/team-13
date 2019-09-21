@@ -1,12 +1,33 @@
 import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
+//css
+import './css/frontpage.css';
+//images
+import Parent from '../uploads/parents.jpg';
+import Children from '../uploads/children.jpg';
 class FrontPage extends React.Component{
   render(){
     return(
-      <div>
-      <a href="/games"><button class="btn btn-primary" type="submit">Child</button></a>
-      <a href="/login"><button class="btn btn-primary" type="submit">Adult</button></a>
-      </div>
+
+      
+        <div className="max-width">
+          <Row>
+            <Col className="no-padding max-width">
+              <a href="/login">
+                <Image src={Parent} className="max-width filter"/>
+                <h1 className="center color-green">Parent</h1>
+              </a>
+            </Col>
+            <Col className="no-padding max-width">
+              <a href="/games">
+                <Image src={Children} className="max-width filter"/>
+                <h1 className="center color-purple">Children</h1>
+              </a>
+            </Col>
+          </Row>
+        </div>
+      
       );
   }
 }
